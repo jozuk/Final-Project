@@ -48,7 +48,7 @@ export function createChart(data, remote_ratio_selections) {
   
     x.domain([0, d3.max(aggData, d => d[1].avgSalary)]);
     y.domain(aggData.map(d => d[0]));
-    color.domain([d3.min(aggData, d => d[1].avgSalary), d3.max(aggData, d => d[1].avgSalary)]);
+    color.domain([5000,300000]);
     
   
     g.append('g')
