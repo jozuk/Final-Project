@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Data Science Salary Trends</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h2 id="title"></h2>
+  <form>
+    <button type="button" id="prev">Previous</button>
+    <button type="button" id="next">Next</button>
+    <input type="checkbox" id="remote" name="remote" checked>
+    <label for="remote">Remote</label>
+    <input type="checkbox" id="hybrid" name="hybrid" checked>
+    <label for="hybrid">Hybrid</label>
+    <input type="checkbox" id="office" name="office" checked>
+    <label for="office">Office</label><br>
+  </form>
+  <div id="content">
+    <div id="message" style="width: 250px; height: 400px;"></div>
+    <svg id="chart" width="1260" height="820"></svg>
+  </div>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
