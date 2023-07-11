@@ -55,7 +55,7 @@ d3.csv('ds_salaries.csv').then(data => {
     updateButtons();
     createChart(data.filter(row => +row.work_year === GetCurrentYear()), remote_ratio_selections);
 
-    title.text(`Data Science Salary Trends in ${GetCurrentYear()}`);
+    title.text(`The Evolution of Data Science Job Market - Year ${GetCurrentYear()}`);
 
     if (GetCurrentYear() === 2020) {
       message.text(
